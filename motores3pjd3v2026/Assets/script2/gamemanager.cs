@@ -32,6 +32,10 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SetState(GameState.Iniciando);
+        {
+            SetState(GameState.Iniciando);
+            LoadScene("splash");
+        }
     }
 
     public void SetState(GameState newState)
@@ -57,4 +61,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Input atribuído ao jogador: " + playerInput.name);
     }
+
+   
 }
