@@ -17,6 +17,8 @@ public class CoinUI : MonoBehaviour
 
     private void UpdateCoins(int amount)
     {
+        Debug.Log("UI recebeu: " + amount);
+
         coinText.text = "Moedas: " + amount;
     }
 }

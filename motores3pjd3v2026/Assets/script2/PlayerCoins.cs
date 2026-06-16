@@ -4,11 +4,22 @@ public class PlayerCoins : MonoBehaviour
 {
     private int coins = 0;
 
-    public void AddCoin()
+    private void OnEnable()
     {
-        coins++;
+        Debug.Log("PlayerCoins inscrito");
+        PlayerObserverManager.OnCoinCollected += AddCoin;
+    }
 
-        Debug.Log("Moedas: " + coins);
+    private void OnDisable()
+    {
+        PlayerObserverManager.OnCoinCollected -= AddCoin;
+    }
+
+    private void AddCoin()
+    {
+        Debug.Log("AddCoin foi chamado");
+
+        coins++;
 
         PlayerObserverManager.NotifyCoinsChanged(coins);
     }
