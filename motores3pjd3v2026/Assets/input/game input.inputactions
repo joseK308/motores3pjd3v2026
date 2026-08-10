@@ -1,0 +1,102 @@
+{
+    "version": 1,
+    "name": "game input",
+    "maps": [
+        {
+            "name": "gameplay",
+            "id": "b0c309b0-89d7-4c9a-9b2b-3e647ff38e75",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "702d5a89-58ae-4a5b-b421-3658ebd1d7c8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1ea3a728-a0ae-46da-801b-8a17def35780",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "65ecbcb9-27cc-4252-af60-92c842e3782f",
+            "actions": [
+                {
+                    "name": "jump",
+                    "type": "Button",
+                    "id": "66e1100c-b9bd-4b5c-962c-5b1c19a9a751",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "233ded31-fc24-4cfe-94ac-390e605e83a2",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";tecladoEmousesingleplayer",
+                    "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "da6f8baf-26c6-4871-ba20-6d72eefc31a1",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";controle",
+                    "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "tecladoEmousesingleplayer",
+            "bindingGroup": "tecladoEmousesingleplayer",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "controle",
+            "bindingGroup": "controle",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
