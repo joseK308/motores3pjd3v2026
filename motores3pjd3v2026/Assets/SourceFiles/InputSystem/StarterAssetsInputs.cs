@@ -5,8 +5,14 @@ using UnityEngine.InputSystem;
 
 namespace StarterAssets
 {
+	
+	private void start()
+	{
+		player input = getcomponent<player>()
+	}
 	public class StarterAssetsInputs : MonoBehaviour
 	{
+		
 		[Header("Character Input Values")]
 		public Vector2 move;
 		public Vector2 look;
@@ -18,8 +24,11 @@ namespace StarterAssets
 
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
-		public bool cursorInputForLook = true;
-
+		public bool cursorInputForLook = true;	
+		
+		
+		
+		private playerInput playerInput;
 
 
 #if ENABLE_INPUT_SYSTEM
